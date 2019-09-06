@@ -30,6 +30,12 @@ int main(){
 		cout<<"Talla: ";
 		fflush(stdin);
 		cin>>P1[i].tip.talla;
+		cout<<"Color: ";
+		cin>>P1[i].tip.color;
+		cout<<"Marca: ";
+		cin>>P1[i].tip.marca;
+		cout<<" Presio: ";
+		cin>>P1[i].tip.Precio;
 	}
 	
 
@@ -37,6 +43,9 @@ int main(){
 		cout<<endl<<"Tipo de Prenda: "<<apuntador->tipo;
 		cout<<endl<<"Accesorio: "<<apuntador->accesorio;
 		cout<<endl<<"Talla: "<<apuntador->tip.talla;
+		cout<<endl<<"Color: "<<apuntador->tip.color;
+		cout<<endl<<"Marca: "<<apuntador->tip.marca;
+		cout<<endl<<"Presio: "<<apuntador->tip.Precio;
 
 	
 	getch();
