@@ -32,15 +32,13 @@ int main()
 			case 1:
 				for(int i=0;i<10; i++){
 					if (p1[i].nombre[0]=='n'){
-						cout<<"Nombre: ";
-						fflush(stdin);
+						cout<<"Nombre: "; fflush(stdin);
 						cin.getline(p1[i].nombre,30,'\n');
 						cout<<"Tiempo: ";
 						cin>>p1[i].tiempo;
 						cout<<"Revista: ";
-						fflush(stdin);
 						cin.getline(p1[i].revista,30,'\n');
-						cout<<'/n';
+						cout<<endl;
 						break;
 						}else 
 							cout<<"Lugar "<<i+1<<"Ocupado " <<endl;
@@ -55,6 +53,7 @@ int main()
 					else{
 						p1[i].nombre[0]=='n';
 						cout<<"usuario eliminado ";
+						cout<<endl;
 						break;
 					}
 				}
