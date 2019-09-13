@@ -8,6 +8,54 @@ struct Nodo{
 };
 int main(){
 	struct Nodo dato1,dato2,dato3,dato4,dato5;
+	struct Nodo *inicio;
+	struct Nodo *aux;
+	inicio=NULL;
+
+	aux=new Nodo();
+	aux->valor=100;
+	aux->puntero=NULL;
+	
+	
+//	cout<<"Valor del Auxiliar: "<<aux->valor<<endl;;
+	
+
+	inicio=aux;	
+	aux=new Nodo();
+	aux->valor=500;
+	aux->puntero=NULL;
+	inicio->puntero=aux;
+	
+	aux=new Nodo();
+	aux->valor=600;
+	aux->puntero=NULL;
+	inicio->puntero->puntero=aux;
+	
+	aux=new Nodo();
+	aux->valor=700;
+	aux->puntero=NULL;
+	inicio->puntero->puntero->puntero=aux;
+	
+	aux=new Nodo();
+	aux->valor=800;
+	aux->puntero=NULL;
+	inicio->puntero->puntero->puntero->puntero=aux;
+	
+	aux=new Nodo();
+	aux->valor=900;
+	aux->puntero=NULL;
+	inicio->puntero->puntero->puntero->puntero->puntero=aux;
+	
+	cout<<"Listas Dinamicas: "<<endl;
+	
+	cout<<"Valor de Auxiliar: "<<inicio->valor<<endl;
+	cout<<inicio->puntero->valor<<endl;
+	cout<<inicio->puntero->puntero->valor<<endl;
+	cout<<inicio->puntero->puntero->puntero->valor<<endl;
+	cout<<inicio->puntero->puntero->puntero->puntero->valor<<endl;
+	cout<<inicio->puntero->puntero->puntero->puntero->puntero->valor<<endl;
+	
+	
 	dato1.valor=3;
 	dato1.puntero=NULL;
 	dato2.valor=7;
@@ -24,10 +72,16 @@ int main(){
 	dato3.puntero=&dato4;
 	dato4.puntero=&dato5;
 		
+	cout<<"Recorridos de Punteros:   "<<endl;
 	cout<<dato1.valor<<endl;
 	cout<<dato1.puntero->valor<<endl;
 	cout<<dato1.puntero->puntero->valor<<endl;
 	cout<<dato1.puntero->puntero->puntero->valor<<endl;
 	cout<<dato1.puntero->puntero->puntero->puntero->valor<<endl;
+	
+	
+	
+	
 return 0;
 }
+
