@@ -4,17 +4,17 @@
 using namespace std;
 struct Nodo{
 	int valor;
-	struct Nodo *puntero;
+	 Nodo *puntero;
 }*lista;
 
 int NV;
-void ingresar(struct Nodo*, int);
-void mostrar(struct Nodo*lista);
+void ingresar( Nodo*&, int);
+void mostrar( Nodo*lista);
 
 int main(){
 	
 	int num,num1,num2;
-	struct Nodo *lista;
+	 Nodo *lista;
 	lista=NULL;
 	do{
 		cout<<"..::Eliga::..\n";
@@ -45,9 +45,9 @@ int main(){
 	}while(num!=3);
 	return 0;
 }
-	void ingresar(struct Nodo*lista, int dt){
-	struct Nodo *pn=new Nodo;
-	struct Nodo *aux;
+	void ingresar( Nodo*&lista, int dt){
+	 Nodo *pn=new Nodo;
+	 Nodo *aux;
 	pn->valor=dt;
 	pn->puntero=NULL;
 	aux=pn;
@@ -66,7 +66,7 @@ int main(){
 	void mostrar(Nodo*lista) {
 		Nodo *pn1=lista;
 		while(pn1!=NULL){
-			cout<<pn1->valor;
+			cout<<pn1->valor<<endl;
 			pn1=pn1->puntero;
 	}
 	cout<<endl;
