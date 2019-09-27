@@ -12,8 +12,9 @@ int main(){
 	double num3;
 	do{
 	
-		cout<<"....:::Elija una Opcion:::...."<<endl;
-		cout<<"1.Paso por Valor"<<endl;
+		cout<<"....:::Elija una Opcion del Menu :::...."<<endl;
+		cout<<endl;
+		cout<<"1. Paso por Valor"<<endl;
 		cout<<"2. Paso por Referencia"<<endl;
 		cout<<"3. Salir"<<endl;
 		cin>>opc;
