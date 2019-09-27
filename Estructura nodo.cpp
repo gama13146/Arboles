@@ -80,8 +80,6 @@ int main(){
 	cout<<dato1.puntero->puntero->puntero->puntero->valor<<endl;
 	
 	
-	
-	
 return 0;
 }
 

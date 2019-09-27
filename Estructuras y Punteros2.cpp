@@ -45,7 +45,7 @@ int main()
 								cout<<"Lugar "<<i+1<<"Ocupado " <<endl;
 				}break;
 				case 2:
-					cout<<"inserte nombre a buscar:";
+					cout<<"inserte nombre a buscar:"<<endl;
                 	cin.getline(elimin,30,'\n');
 					for(int i=0;i<10; i++){
 						n=strcmp(puntero->nombre,elimin);
@@ -53,9 +53,9 @@ int main()
 							puntero++;
 						else{
 							p1[i].nombre[0]=='n';
-							cout<<"usuario eliminado ";
+							cout<<"usuario eliminado "<<endl;
 							cout<<endl;
-							break;
+					break;
 						}
 					}
 					break;
