@@ -65,6 +65,7 @@ int main(){
 	
 	void mostrar(Nodo*lista) {
 		Nodo *pn1=lista;
+		pn1=lista;
 		while(pn1!=NULL){
 			cout<<pn1->valor<<endl;
 			pn1=pn1->puntero;
