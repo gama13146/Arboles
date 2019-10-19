@@ -16,7 +16,7 @@ void mostrarAtras();
 Nodo*lista=NULL;
 
 int main (){
-	int opcion,num1,num2,num3;
+	int opcion,num1,num2;
 
 	do{
 		cout<<"..::Eliga Una Opcion::..\n";
