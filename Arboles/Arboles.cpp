@@ -29,11 +29,6 @@ int main(){
 	aux->izq=NULL;
 	aux->der=NULL;
 	
-//	aux=aux->der;
-//	aux->valor=7;
-//	aux->izq=NULL;
-//	aux->der=NULL;
-	
 	aux=raiz->der;
 	aux->valor=13;
 	aux->der=NULL;
@@ -49,6 +44,7 @@ int main(){
 	aux->izq=NULL;
 	aux->der=NULL;
 	
+	cout<<"El Arbol es: \n";
 	cout<<raiz->valor<<endl;
 	cout<<raiz->izq->valor<<" "<<raiz->der->valor<<endl;
 	cout<<raiz->izq->der->valor<<" "<<raiz->der->izq->valor<<endl;
